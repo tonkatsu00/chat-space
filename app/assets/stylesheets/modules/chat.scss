@@ -4,6 +4,7 @@
     box-sizing: border-box;
     height: 100px;
     padding: 0 40px;
+    border-bottom: solid 1px #eeeeee;
     .left-header {
       float: left;
       &__title {
@@ -30,6 +31,10 @@
       line-height: 40px;
       margin-top: 28px;
       padding: 0 20px;
+      .edit-link {
+        text-decoration: none;
+        color: #38aef0;
+      }
     }
   }
 
@@ -40,6 +45,7 @@
     height: calc(100vh - 100px - 90px);
     overflow: scroll;
     .message {
+      padding-bottom: 46px;
       .upper-message {
         display: flex;
         &__user-name {
@@ -68,12 +74,13 @@
     background-color: #DDDDDD;
     box-sizing: border-box;
     height: 90px;
-    padding: 20px 50px 20px 40px;
+    padding: 20px 40px;
     &__message {
       border: none;
       float: left;
       height: 50px;
-      width: calc(100% - 150px);
+      width: calc(100% - 155px);
+      padding-left: 10px;
     }
     &__mask {
       background-color: $white;
@@ -97,6 +104,7 @@
       height: 50px;
       margin-left: 15px;
       padding: 0 30px;
+      width: 100px;
     }
   }
 }
